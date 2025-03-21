@@ -23,7 +23,13 @@ body {
     height: 1000px;
     margin-top: 50px;
     padding: 50px;
-    text-align: center;
+}
+
+.paper p {
+    text-indent: 20pt;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .watermark {
@@ -38,4 +44,12 @@ body {
     pointer-events: none;
     user-select: none;
     color: red;
+}
+
+black {
+    background-color: black;
+}
+
+h1, h3 {
+    text-align: center;
 }
