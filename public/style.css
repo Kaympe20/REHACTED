@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 body {
-    background-color: lightblue;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3yNVDkep_EYnKaAA3SOVULG8J0FHEvg_4BQ&s);
+    background-attachment: fixed;
     margin: 0;
     width: 100%;
     height: 100%;
