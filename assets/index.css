@@ -36,6 +36,7 @@ body {
   height: 100%;
   font-family: Special Elite;
   padding-bottom: 500px;
+  overflow-x: hidden;
 }
 
 .content {
