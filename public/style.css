@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@media screen and (max-width: 1200px) {
+    .hard-fork {
+        position: relative;
+    }
+}
+
 body {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3yNVDkep_EYnKaAA3SOVULG8J0FHEvg_4BQ&s);
     background-attachment: fixed;
@@ -56,4 +62,15 @@ black {
 
 h1, h3 {
     text-align: center;
+}
+
+.hard-fork {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 2vw;
+}
+
+.hard-fork img {
+    width: 10vw;
 }
