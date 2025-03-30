@@ -6,6 +6,29 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .paper {
+    width: 90vw;
+    height: fit-content;
+  }
+
+  .hard-fork img {
+    width: 10vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .paper {
+    width: 80vw;
+    height: 1200px;
+    rotate: -5deg;
+  }
+  
+  .hard-fork img {
+    width: 10vw;
+  }
+}
+
 body {
   background-image: url("/assets/img/wood.png");
   margin: 0;
@@ -22,11 +45,8 @@ body {
 .paper {
   position: relative;
   margin-left: auto;
-  rotate: -5deg;
   margin-right: auto;
   background-color: white;
-  width: 800px;
-  height: 1000px;
   margin-top: 50px;
   padding: 50px;
 }
@@ -69,8 +89,4 @@ h3 {
   z-index: 99;
   top: 0;
   left: 2vw;
-}
-
-.hard-fork img {
-  width: 10vw;
 }
