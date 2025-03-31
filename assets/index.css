@@ -122,10 +122,14 @@ h3 {
 }
 
 .sponsors {
+  position: relative;
   display: flex;
   justify-content: center;
+  z-index: 999;
+  gap: 50px;
 }
 
 .sponsors img {
-  height: 100px;
+  height: 200px;
+  border: 2px solid black;
 }
