@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-@media screen and (max-width: 1200px) {
-  .hard-fork {
-    position: relative;
-  }
+@font-face {
+  font-family: "Wondertype";
+  src: url(/assets/fonts/WonderType-Regular.otf) format("opentype");
 }
 
 @media screen and (max-width: 800px) {
@@ -15,17 +14,52 @@
   .hard-fork img {
     width: 10vh;
   }
+
+  .hard-fork {
+    position: relative;
+    left: 10vw;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .paper {
-    width: 80vw;
-    height: 1200px;
+    width: 60vw;
+    aspect-ratio: 8.5 / 11;
+  }
+
+  .paper:nth-of-type(1) {
     rotate: -5deg;
   }
-  
+
+  .paper:nth-of-type(2) {
+    rotate: 3deg;
+  }
+
+  .paper p {
+    font-size: 1vw;
+  }
+
   .hard-fork img {
     width: 10vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+  }
+
+  .hard-fork {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 2vw;
   }
 }
 
@@ -35,7 +69,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: Special Elite;
-  padding-bottom: 500px;
   overflow-x: hidden;
 }
 
@@ -45,18 +78,21 @@ body {
 
 .paper {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   background-color: white;
-  margin-top: 50px;
-  padding: 50px;
+  margin: 50px auto auto;
+  padding: 2% 5%;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .paper p {
   text-indent: 20pt;
   text-align: justify;
   margin-bottom: 30px;
-  font-size: 20px;
 }
 
 .watermark {
@@ -64,7 +100,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 72px;
+  font-size: 10vw;
   opacity: 0.15;
   white-space: nowrap;
   width: 100%;
@@ -85,9 +121,11 @@ h3 {
   text-align: center;
 }
 
-.hard-fork {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 2vw;
+.sponsors {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors img {
+  height: 100px;
 }
