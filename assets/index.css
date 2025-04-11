@@ -9,6 +9,7 @@
   .paper {
     width: 90vw;
     height: fit-content;
+    margin-bottom: 80px;
   }
 
   .hard-fork img {
@@ -25,6 +26,7 @@
   .paper {
     width: 60vw;
     aspect-ratio: 8.5 / 11;
+    margin-bottom: 120px;
   }
 
   .paper:nth-of-type(1) {
@@ -73,13 +75,13 @@ body {
 }
 
 .content {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .paper {
   position: relative;
   background-color: white;
-  margin: 50px auto auto;
+  margin: 50px auto 100px auto;
   padding: 2% 5%;
 }
 
@@ -132,4 +134,131 @@ h3 {
 .sponsors img {
   height: 200px;
   border: 2px solid black;
+}
+
+.sponsor-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.tier {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+  border: 1px dashed #000;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tier h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tier p {
+  font-size: 0.9em;
+  margin: 0;
+  text-indent: 0 !important;
+}
+
+.tier.bronze {
+  border-color: #CD7F32;
+}
+
+.tier.bronze h4 {
+  color: #CD7F32;
+}
+
+.tier.silver {
+  border-color: #C0C0C0;
+}
+
+.tier.silver h4 {
+  color: #808080;
+}
+
+.tier.gold {
+  border-color: #FFD700;
+}
+
+.tier.gold h4 {
+  color: #DAA520;
+}
+
+.tier.diamond {
+  border-color: #B9F2FF;
+}
+
+.tier.diamond h4 {
+  color: #9AC4F8;
+}
+
+.sponsor {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px dashed #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gold-sponsor {
+  border-color: #FFD700;
+  border-width: 2px;
+  position: relative;
+}
+
+.bronze-sponsor {
+  border-color: #CD7F32;
+  border-width: 2px;
+  position: relative;
+}
+
+.sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.sponsor-row .sponsor {
+  flex: 1;
+  min-width: 250px;
+}
+
+.gold-sponsor h4 {
+  text-align: center;
+  margin-top: 0;
+  color: #DAA520;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.bronze-sponsor h4 {
+  text-align: center;
+  margin-top: 0;
+  color: #CD7F32;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+  .sponsor-tiers {
+    flex-direction: column;
+  }
+
+  .tier {
+    margin-bottom: 10px;
+  }
+
+  .sponsor-row {
+    flex-direction: column;
+  }
+
+  .sponsor-row .sponsor {
+    margin-bottom: 20px;
+  }
 }
