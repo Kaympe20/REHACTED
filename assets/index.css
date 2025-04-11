@@ -129,7 +129,11 @@ h3 {
   gap: 50px;
 }
 
-.sponsors img {
-  height: 200px;
+.sponsors a {
   border: 2px solid black;
+  height: 200px;
+}
+
+.sponsors img {
+  height: 100%;
 }
