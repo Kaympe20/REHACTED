@@ -137,3 +137,8 @@ h3 {
 .sponsors img {
   height: 100%;
 }
+
+p a {
+  color: blue;
+  text-decoration: underline;
+}
