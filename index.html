@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[REHACTED]</title>
     <meta
       name="description"
       content="A 24 hour covert op hackathon in Northern Virginia."
-/>
+    />
     <meta
       name="keywords"
       content="hackathon, covert, op, northern, virginia, 24, hours"
-/>
+    />
 
-    <meta property="og:title" content="[REHACTED]"/>
+    <meta property="og:title" content="[REHACTED]" />
     <meta
       property="og:description"
       content="A 24 hour covert op hackathon in Northern Virginia."
-/>
-    <meta property="og:image" content="https://rehacted.org/assets/img/splash.png"/>
-    <meta property="og:url" content="https://rehacted.org/"/>
-    <meta property="og:type" content="website"/>
+    />
+    <meta
+      property="og:image"
+      content="https://rehacted.org/assets/img/splash.png"
+    />
+    <meta property="og:url" content="https://rehacted.org/" />
+    <meta property="og:type" content="website" />
     <link
       rel="icon"
       href="https://rehacted.org/assets/stamp-BqDJTVvJ.svg"
       type="image/svg+xml"
-/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preload"
       href="https://serenidad.click/hacktime/getSchedule/41ccd101-5751-4d3f-886a-21035af2f81b"
       crossorigin
-/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
       rel="stylesheet"
-/>
+    />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
-/>
+    />
     <style>
       #content-area {
         font-family: "Special Elite";
@@ -135,8 +138,19 @@
                   id="sponsors-link"
                 >
                   <div class="text-blue-500 mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   </div>
                   <div class="p-2 text-center text-gray-800 font-bold">
@@ -148,8 +162,19 @@
                   id="schedule-link"
                 >
                   <div class="text-green-500 mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
                     </svg>
                   </div>
                   <div class="p-2 text-center text-gray-800 font-bold">
@@ -161,9 +186,25 @@
                   id="location-link"
                 >
                   <div class="text-purple-500 mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
                     </svg>
                   </div>
                   <div class="p-2 text-center text-gray-800 font-bold">
@@ -175,8 +216,19 @@
                   id="resticked-link"
                 >
                   <div class="text-yellow-500 mb-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                      />
                     </svg>
                   </div>
                   <div class="p-2 text-center text-gray-800 font-bold">
@@ -208,6 +260,7 @@
               <h3 class="font-bold">${new Date(item.time.start).toLocaleString(
                 "en-US",
                 {
+                  timeZone: "Etc/Utc",
                   weekday: "long",
                   month: "long",
                   day: "numeric",
@@ -216,10 +269,12 @@
               <p class="text-sm">${new Date(item.time.start).toLocaleTimeString(
                 "en-US",
                 {
+                  timeZone: "Etc/Utc",
                   hour: "2-digit",
                   minute: "2-digit",
                 }
               )} - ${new Date(item.time.end).toLocaleTimeString("en-US", {
+              timeZone: "Etc/Utc",
               hour: "2-digit",
               minute: "2-digit",
             })}: ${item.title || "TBD"}</p>
