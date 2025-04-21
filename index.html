@@ -235,6 +235,30 @@
                     Resticked
                   </div>
                 </div>
+                <div
+                  class="bg-white border-2 border-red-300 rounded-md shadow-md hover:shadow-lg hover:bg-red-50 transition-all duration-200 cursor-pointer flex flex-col items-center p-3"
+                  id="referral-link"
+                >
+                  <div class="text-red-500 mb-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="p-2 text-center text-gray-800 font-bold">
+                    Referral Program
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -310,7 +334,7 @@
               <div class="bg-gray-100 p-4 rounded">
         <div class="flex items-center mb-2">
           <img src="https://rehacted.org/2025_04_18_0ea_Kleki(1).png" alt="National Interest Foundation" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://nifusa.org/" class="underline">National Interest Foundation</a></h3>
+          <h3 class="font-bold"><a href="https://nifusa.org/?utm_source=rehacted" class="underline">National Interest Foundation</a></h3>
         </div>
         <p class="text-sm">An American Interest Towards a Better and More Innovative Foreign Policy</p>
       </div>
@@ -322,7 +346,7 @@
       <div class="bg-gray-100 p-4 rounded">
         <div class="flex items-center mb-2">
           <img src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png&w=371&h=371" alt="3kh0" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://3kh0.net?utm_source=rehacted" class="underline">3kh0</a></h3>
+          <h3 class="font-bold"><a href="https://3kh0.net/?utm_source=rehacted" class="underline">3kh0</a></h3>
         </div>
         <p class="text-sm">16 year old gay software developer, furry, cybersecurity enthusiast, and privacy activist</p>
       </div>
@@ -358,7 +382,15 @@
         </div>
         <p class="text-sm">Snout is a privacy-first writing platform with custom domains, <150ms loading times, GDPR-compliant analytics, and without the tracking. It's also 100% free.</p>
       </div>
+      <div class="bg-gray-100 p-4 rounded">
+        <div class="flex items-center mb-2">
+          <img src="https://images.squarespace-cdn.com/content/v1/63b728234038052a59b65936/5ff7fd00-5334-4dda-aad8-260161a8bf50/favicon.ico?format=100w" alt="&pizza" class="w-16 h-16 object-cover rounded mr-2">
+          <h3 class="font-bold"><a href="https://snout.nu/?utm_source=rehacted" class="underline">&amp;pizza</a></h3>
+        </div>
+        <p class="text-sm">&amp;pizza is a bold and innovative pizza brand dedicated to quality and individuality. We offer a variety of unique and delicious pizzas, crafted with fresh ingredients and baked to perfection.</p>
+      </div>
     </div>
+    
             <p class="text-gray-700">Thanks to our sponsors for making this mission possible! If you wish to partner with us for this mission, please contact us at <a href="mailto:sponsor@rehacted.org">sponsor@rehacted.org</a></p>
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
           `,
@@ -385,6 +417,81 @@
             <p><a href="https://forms.fillout.com/t/ev3grkgG7Eus" class="underline text-blue-700">Use this form to upload your sticker to mission control.</a></p>
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
           `,
+        referral: `
+            <h2 class="text-2xl font-bold text-red-500 uppercase mb-4">AGENT RECRUITMENT PROGRAM</h2>
+            <div class="bg-gray-100 p-4 rounded mb-4">
+              <h3 class="font-bold text-xl mb-2">Special Equipment Incentive</h3>
+              <p class="mb-2">Recruit five new agents for the mission and receive a <span class="font-bold">Raspberry Pi Zero W</span> field kit for your service.</p>
+              <div class="flex items-center mb-2">
+                <img src="https://images.prismic.io/rpf-products/656a14be-ba7e-476d-94ff-3dba02c4050e_Pi+ZERO+Angle+1.jpg?auto=compress%2Cformat&fit=max" alt="Raspberry Pi Zero W" class="w-24 h-auto object-cover rounded mr-2">
+                <div>
+                  <h4 class="font-bold">Raspberry Pi Zero W</h4>
+                  <p class="text-sm">Compact computing hardware for covert field operations</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mb-6 bg-gray-100 p-4 rounded">
+              <h3 class="font-bold text-lg mb-4">Generate Your Recruitment Link:</h3>
+              <div class="flex flex-col md:flex-row gap-4">
+                <input 
+                  type="text" 
+                  id="agent-name" 
+                  placeholder="Enter your spy code (starts with &quot;rec&quot;)" 
+                  class="border-2 border-gray-300 rounded p-2 flex-grow"
+                  aria-label="Your code name"
+                >
+                <button 
+                  id="generate-link-btn" 
+                  class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition-colors duration-200"
+                >
+                  Generate Link
+                </button>
+              </div>
+              
+              <div id="referral-link-container" class="mt-4 hidden">
+                <p class="mb-2 font-bold">Your personalized recruitment link:</p>
+                <div class="flex items-center">
+                  <input 
+                    type="text" 
+                    id="referral-link-output" 
+                    class="border-2 border-gray-300 rounded p-2 flex-grow font-mono text-sm" 
+                    readonly
+                  >
+                  <button 
+                    id="copy-link-btn" 
+                    class="ml-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors duration-200"
+                    aria-label="Copy link"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                      <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                    </svg>
+                  </button>
+                </div>
+                <p id="copy-confirmation" class="text-green-600 mt-2 hidden">Link copied to clipboard!</p>
+              </div>
+            </div>
+            
+            <h3 class="font-bold text-lg mb-2">How it Works:</h3>
+            <ol class="list-decimal pl-6 mb-4">
+              <li class="mb-2">Generate your personalized recruitment link above</li>
+              <li class="mb-2">Share this link with potential agents</li>
+              <li class="mb-2">When they use your link, you'll automatically be credited for the referral</li>
+              <li class="mb-2">Once five recruits register using your link, your Raspberry Pi Zero W will be prepared for pickup</li>
+            </ol>
+            
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-4">
+              <p class="font-bold">CLASSIFIED NOTICE:</p>
+              <p>All recruits must be high school students capable of participating in the 24-hour operation.</p>
+            </div>
+            
+            <p class="text-gray-700">For questions about the recruitment program, contact mission control at <a href="mailto:contact@rehacted.org" class="underline text-blue-700">contact@rehacted.org</a></p>
+            
+            <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
+            
+          
+          `,
       };
 
       function handleHashChange() {
@@ -393,6 +500,8 @@
           document.getElementById("content-area").innerHTML = contents[hash];
           if (hash === "location") {
             initializeMap();
+          } else if (hash == "referral") {
+            referralLogic();
           }
           addBackButtonListener();
         } else {
@@ -438,10 +547,51 @@
           window.location.hash = "resticked";
         });
 
+      function referralLogic() {
+        document
+          .getElementById("generate-link-btn")
+          .addEventListener("click", function () {
+            const agentName = document
+              .getElementById("agent-name")
+              .value.trim();
+            if (agentName) {
+              const referralLink = `https://hack.fillout.com/rehacted?referral=${encodeURIComponent(
+                agentName
+              )}`;
+              document.getElementById("referral-link-output").value =
+                referralLink;
+              document
+                .getElementById("referral-link-container")
+                .classList.remove("hidden");
+            } else {
+              alert("Please enter your spy code first.");
+            }
+          });
+
+        document
+          .getElementById("copy-link-btn")
+          .addEventListener("click", function () {
+            const linkElement = document.getElementById("referral-link-output");
+            linkElement.select();
+            document.execCommand("copy");
+
+            const confirmationElement =
+              document.getElementById("copy-confirmation");
+            confirmationElement.classList.remove("hidden");
+
+            setTimeout(function () {
+              confirmationElement.classList.add("hidden");
+            }, 3000);
+          });
+      }
+      document.getElementById("referral-link").addEventListener("click", () => {
+        window.location.hash = "referral";
+      });
       window.addEventListener("hashchange", handleHashChange);
 
       handleHashChange();
       location.hash == "#schedule" ? loadSchedule() : void true;
+      location.hash == "#referral" ? referralLogic() : void true;
     </script>
   </body>
 </html>
