@@ -320,7 +320,7 @@
                   </div>
                 </div>
                 <div
-                class="bg-white border-2 border-teal-300 rounded-md shadow-md hover:shadow-lg hover:bg-teal-50 transition-all duration-200 cursor-pointer flex flex-col items-center p-3"
+                class="bg-white border-2 border-yellow-300 rounded-md shadow-md hover:shadow-lg hover:bg-yellow-50 transition-all duration-200 cursor-pointer flex flex-col items-center p-3"
                 id="info-link"
               >
                 <div class="text-teal-500 mb-1">
@@ -619,7 +619,7 @@
       <p class="text-xs text-gray-600">Sponsor & Venue Acquisition</p>
     </div>
   </div>
-  <p class="text-sm text-gray-700">Gets sponsors</p>
+  <!--<p class="text-sm text-gray-700"></p>-->
 </div>
 <!--
                 <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
@@ -652,7 +652,7 @@
       <p class="text-xs text-gray-600">General Assistance</p>
     </div>
   </div>
-                  <p class="text-sm text-gray-700">person who uses dn42</p>
+                  <!--<p class="text-sm text-gray-700"></p>-->
                 </div>
 
 
@@ -675,7 +675,7 @@
       <p class="text-xs text-gray-600">General Assistance</p>
     </div>
   </div>
-                  <p class="text-sm text-gray-700">professional chromebook breaker</p>
+                  <p class="text-sm text-gray-700">Professional chromebook breaker</p>
                 </div>
 
 
@@ -687,7 +687,7 @@
       <p class="text-xs text-gray-600">Website Development</p>
     </div>
   </div>
-                  <p class="text-sm text-gray-700">cat who likes tennis, coding, and food.</p>
+                  <p class="text-sm text-gray-700">Cat who likes tennis, coding, and food.</p>
                 </div>
             </div>
             
@@ -695,8 +695,8 @@
 
             
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
-          `,        info: `
-            <h2 class="text-2xl font-bold text-teal-500 uppercase mb-4">MISSION INFORMATION</h2>
+          `,  info: `
+            <h2 class="text-2xl font-bold text-yellow-500 uppercase mb-4">MISSION INFORMATION</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <!-- parents! -->
@@ -744,21 +744,38 @@
               </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- hcb get money but not from big buisness -->
-              <div class="bg-white shadow-md rounded-lg p-6">
-                <h3 class="text-xl font-bold mb-3 text-teal-600 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
-                    <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
-                  </svg>
-                  Support the Mission
-                </h3>
-                <p class="text-gray-700 mb-4">Your contribution helps us provide a top-notch experience for our young agents. Rehacted is fiscally sponsored by Hack Club, so your donations are tax-deductable.</p>
-               <a href="https://hcb.hackclub.com/donations/start/rehacted" class="underline text-blue-700">Donate via HCB.</a></p>
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold mb-3 text-teal-600 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                </svg>
+                Support the Mission
+              </h3>
+              <p class="text-gray-700 mb-4">Your contribution helps us provide a top-notch experience for our young agents. Choose your preferred method below:</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border rounded-lg p-4 hover:bg-blue-100 transition-colors duration-200" style="background-color: #ec375010;">
+                  <h4 class="font-bold text-lg mb-2" style="color: #ec3750;">HCB</h4>
+                  <p class="text-gray-700 mb-3">Donations through HCB are tax-deductible in the US (501(c)(3))</p>
+                  <a href="https://hcb.hackclub.com/donations/start/rehacted" class="block w-full text-white font-bold py-2 px-4 rounded text-center transition-colors duration-200" style="background-color: #ec3750;">
+                    Donate via HCB
+                  </a>
+                </div>
+                
+                <div class="border rounded-lg p-4 bg-orange-50 hover:bg-orange-100 transition-colors duration-200" style="background-color: #f2682210;">
+                  <h4 class="font-bold text-lg mb-2 flex items-center" style="color: #f26822;">
+                    Monero
+                  </h4>
+                  <p class="text-gray-700 mb-2">We also accept Monero.</p>
+                  <div class="bg-gray-100 p-2 rounded mb-3 overflow-x-auto">
+                    <code class="text-xs text-gray-800">42D8Hn17pt7J7e3PA2CSudVsSqyRVqTGnDfcnpGD7VFjcsoEQTSC67zStzVYrfLv7nCD4xx15wCdAQoEPCPS25mxDuNtkyw</code>
+                  </div>
+                  <button onclick="navigator.clipboard.writeText('42D8Hn17pt7J7e3PA2CSudVsSqyRVqTGnDfcnpGD7VFjcsoEQTSC67zStzVYrfLv7nCD4xx15wCdAQoEPCPS25mxDuNtkyw'); alert('Copied!')" class="block w-full text-white font-bold py-2 px-4 rounded text-center transition-colors duration-200" style="background-color: #f26822;">
+                    Copy Monero Address
+                  </button>
+                </div>
               </div>
-              
-              
             </div>
             
             <button id="back-button" class="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition-colors duration-200">Back to Mission</button>
