@@ -93,6 +93,9 @@
         color: #D00000;
         font-size: 16px;
       }
+      * {
+        word-break: break-word;
+      }
     </style>
   </head>
   <body class="bg-gray-100 font-sans">
@@ -292,7 +295,54 @@
                     Referral Program
                   </div>
                 </div>
-                
+                <div
+                  class="bg-white border-2 border-indigo-300 rounded-md shadow-md hover:shadow-lg hover:bg-indigo-50 transition-all duration-200 cursor-pointer flex flex-col items-center p-3"
+                  id="team-link"
+                >
+                  <div class="text-indigo-500 mb-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="p-2 text-center text-gray-800 font-bold">
+                    Team Members
+                  </div>
+                </div>
+                <div
+                class="bg-white border-2 border-teal-300 rounded-md shadow-md hover:shadow-lg hover:bg-teal-50 transition-all duration-200 cursor-pointer flex flex-col items-center p-3"
+                id="info-link"
+              >
+                <div class="text-teal-500 mb-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="p-2 text-center text-gray-800 font-bold">
+                  Mission Information
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -363,67 +413,68 @@
             <h2 class="text-2xl font-bold text-blue-500 uppercase mb-4">OUR SPONSORS</h2>
             <h2 class="text-xl">Intelligence Chiefs</h2>
 
-            <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
 
               <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://rehacted.org/2025_04_18_0ea_Kleki(1).png" alt="National Interest Foundation" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://nifusa.org/?utm_source=rehacted" class="underline">National Interest Foundation</a></h3>
-        </div>
-        <p class="text-sm">An American Interest Towards a Better and More Innovative Foreign Policy</p>
-      </div>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://rehacted.org/2025_04_18_0ea_Kleki(1).png" alt="National Interest Foundation" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold"><a href="https://nifusa.org/?utm_source=rehacted" class="underline">National Interest Foundation</a></h3>
+                </div>
+                <p class="text-sm">An American Interest Towards a Better and More Innovative Foreign Policy</p>
+              </div>
              
             </div>
             <h2 class="text-xl">Field Operatives</h2>
 
-                 <div class="grid grid-cols-2 gap-4 mb-6">
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png&w=371&h=371" alt="3kh0" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://3kh0.net/?utm_source=rehacted" class="underline">3kh0</a></h3>
-        </div>
-        <p class="text-sm">16 year old gay software developer, furry, cybersecurity enthusiast, and privacy activist</p>
-      </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png&w=371&h=371" alt="3kh0" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://3kh0.net/?utm_source=rehacted" class="underline">3kh0</a></h3>
+                </div>
+                <p class="text-sm">16 year old gay software developer, furry, cybersecurity enthusiast, and privacy activist</p>
+              </div>
 
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://scrapyard.shayaand.hackclub.app/static/lucid.jpg" alt="𝕝𝕦𝕔𝕚𝕕" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://jjjhhhppp.vip/?utm_source=rehacted" class="underline">𝕝𝕦𝕔𝕚𝕕</a></h3>
-        </div>
-        <p class="text-sm">jjjhhhppp</p>
-      </div>
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://scrapyard.shayaand.hackclub.app/static/lucid.jpg" alt="𝕝𝕦𝕔𝕚𝕕" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://jjjhhhppp.vip/?utm_source=rehacted" class="underline">𝕝𝕦𝕔𝕚𝕕</a></h3>
+                </div>
+                <p class="text-sm">jjjhhhppp</p>
+              </div>
 
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://www.chromium.org/_assets/icon-chromium-96.png" alt="Chromium" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://www.chromium.org/chromium-projects/?utm_source=rehacted" class="underline">Chromium</a></h3>
-        </div>
-        <p class="text-sm">Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</p>
-      </div>
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://www.chromium.org/_assets/icon-chromium-96.png" alt="Chromium" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://www.chromium.org/chromium-projects/?utm_source=rehacted" class="underline">Chromium</a></h3>
+                </div>
+                <p class="text-sm">Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</p>
+              </div>
 
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://avatars.githubusercontent.com/u/182854818?s=200&v=4" alt="Femboy Cyber Networks" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://femboy.zip/?utm_source=rehacted" class="underline">Femboy Cyber Networks</a></h3>
-        </div>
-        <p class="text-sm">Not Your Usual Privacy Friendly ISP</p>
-      </div>
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://avatars.githubusercontent.com/u/182854818?s=200&v=4" alt="Femboy Cyber Networks" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://femboy.zip/?utm_source=rehacted" class="underline">Femboy Cyber Networks</a></h3>
+                </div>
+                <p class="text-sm">Not Your Usual Privacy Friendly ISP</p>
+              </div>
 
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://picsum.photos/80" alt="Chromium" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://snout.nu/?utm_source=rehacted" class="underline">Snout.nu</a></h3>
-        </div>
-        <p class="text-sm">Snout is a privacy-first writing platform with custom domains, <150ms loading times, GDPR-compliant analytics, and without the tracking. It's also 100% free.</p>
-      </div>
-      <div class="bg-gray-100 p-4 rounded">
-        <div class="flex items-center mb-2">
-          <img src="https://images.squarespace-cdn.com/content/v1/63b728234038052a59b65936/5ff7fd00-5334-4dda-aad8-260161a8bf50/favicon.ico?format=100w" alt="&pizza" class="w-16 h-16 object-cover rounded mr-2">
-          <h3 class="font-bold"><a href="https://snout.nu/?utm_source=rehacted" class="underline">&amp;pizza</a></h3>
-        </div>
-        <p class="text-sm">&amp;pizza is a bold and innovative pizza brand dedicated to quality and individuality. We offer a variety of unique and delicious pizzas, crafted with fresh ingredients and baked to perfection.</p>
-      </div>
-    </div>
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://picsum.photos/80" alt="Snout.nu" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://snout.nu/?utm_source=rehacted" class="underline">Snout.nu</a></h3>
+                </div>
+                <p class="text-sm">Snout is a privacy-first writing platform with custom domains, <150ms loading times, GDPR-compliant analytics, and without the tracking. It's also 100% free.</p>
+              </div>
+
+              <div class="bg-gray-100 p-4 rounded">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
+                  <img src="https://images.squarespace-cdn.com/content/v1/63b728234038052a59b65936/5ff7fd00-5334-4dda-aad8-260161a8bf50/favicon.ico?format=100w" alt="&pizza" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
+                  <h3 class="font-bold break-words"><a href="https://andpizza.com/?utm_source=rehacted" class="underline">&amp;pizza</a></h3>
+                </div>
+                <p class="text-sm">&amp;pizza is a bold and innovative pizza brand dedicated to quality and individuality. We offer a variety of unique and delicious pizzas, crafted with fresh ingredients and baked to perfection.</p>
+              </div>
+            </div>
     
             <p class="text-gray-700">Thanks to our sponsors for making this mission possible! If you wish to partner with us for this mission, please contact us at <a href="mailto:sponsor@rehacted.org">sponsor@rehacted.org</a></p>
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
@@ -525,6 +576,192 @@
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
             
           
+          `,   team: `
+            <h2 class="text-2xl font-bold text-indigo-500 uppercase mb-4">TEAM MEMBERS</h2>
+            
+            <div class="mb-6">
+              <h3 class="font-bold text-lg border-b-2 border-indigo-300 pb-2 mb-4">COMMAND CENTER</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-100 p-4 rounded border-l-4 border-indigo-500">
+  <div class="flex items-center gap-4 mb-2">
+    <img class="h-12 w-12 rounded-full object-cover" src="https://cat-avatars.vercel.app/api/cat?name=Brentan" alt="Brentan">
+    <div>
+      <h4 class="font-bold text-lg">Brentan</h4>
+      <p class="text-sm text-gray-700">Co-Organizer</p>
+    </div>
+  </div>
+  <p class="text-gray-700">"Programing is a skill best accrued by practice, examples, tinkering and Stack Overflow, rather than from books."</p>
+</div>
+
+                <div class="bg-gray-100 p-4 rounded border-l-4 border-indigo-500">
+  <div class="flex items-center gap-4 mb-2">
+    <img class="h-12 w-12 rounded-full object-cover" src="https://trello.com/1/cards/6801586725e58c27c94eb002/attachments/68015c198b599985afe93f9c/previews/68015c1a8b599985afe93fa5/download/photo.webp" alt="Kayla">
+    <div>
+      <h4 class="font-bold text-lg">Kayla</h4>
+      <p class="text-sm text-gray-700">Co-Organizer</p>
+    </div>
+  </div>
+  <p class="text-gray-700">She makes software to convenience life.</p>
+</div>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="font-bold text-lg border-b-2 border-indigo-300 pb-2 mb-4">GROUND TEAM</h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+  <div class="flex items-center mb-2">
+    <img src="/public/slurpee.png" alt="Agent Slurpee" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Slurpee</h4>
+      <p class="text-xs text-gray-600">Sponsor & Venue Acquisition</p>
+    </div>
+  </div>
+  <p class="text-sm text-gray-700">Gets sponsors</p>
+</div>
+<!--
+                <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+  <div class="flex items-center mb-2">
+    <img src="https://cat-avatars.vercel.app/api/cat?name=Micha" alt="Agent Micha" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Micha</h4>
+      <p class="text-xs text-gray-600">Hardware Logistics</p>
+    </div>
+  </div>
+  <p class="text-sm text-gray-700">Young electrical engineer who loves OSS and OSHW!</p>
+</div>-->
+
+                <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="flex items-center mb-2">
+    <img src="/public/kate.png" alt="Agent Kate" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Kate</h4>
+      <p class="text-xs text-gray-600">General Assistance</p>
+    </div>
+  </div>
+                  <p class="text-sm text-gray-700">“The mystery of human existence lies not in just staying alive, but in finding something to live for”</p>
+                </div>
+                
+    <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="flex items-center mb-2">
+    <img src="/public/mark.png" alt="Agent Mark" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Mark</h4>
+      <p class="text-xs text-gray-600">General Assistance</p>
+    </div>
+  </div>
+                  <p class="text-sm text-gray-700">person who uses dn42</p>
+                </div>
+
+
+    <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="flex items-center mb-2">
+    <img src="/public/echo.gif" alt="Agent Echo" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Echo</h4>
+      <p class="text-xs text-gray-600">General Assistance</p>
+    </div>
+  </div>
+                  <p class="text-sm text-gray-700">16 year old software developer, furry, cybersecurity enthusiast, and privacy activist</p>
+                </div>
+
+                  <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="flex items-center mb-2">
+    <img src="/public/kas.png" alt="Agent Kas" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">Kas</h4>
+      <p class="text-xs text-gray-600">General Assistance</p>
+    </div>
+  </div>
+                  <p class="text-sm text-gray-700">professional chromebook breaker</p>
+                </div>
+
+
+                  <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="flex items-center mb-2">
+    <img src="/public/david.png" alt="Agent David" class="h-12 w-12 rounded-full object-cover mr-3">
+    <div>
+      <h4 class="font-bold">David</h4>
+      <p class="text-xs text-gray-600">Website Development</p>
+    </div>
+  </div>
+                  <p class="text-sm text-gray-700">cat who likes tennis, coding, and food.</p>
+                </div>
+            </div>
+            
+          
+
+            
+            <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
+          `,        info: `
+            <h2 class="text-2xl font-bold text-teal-500 uppercase mb-4">MISSION INFORMATION</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <!-- parents! -->
+              <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-3 text-teal-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                  </svg>
+                  For Parents & Chaperones
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <a href="/assets/REHACTED Parent Guide.pdf" class="text-blue-600 hover:underline hover:text-blue-800">REHACTED Parent Guide</a>
+                  </li>
+                 
+                </ul>
+              </div>
+              
+              <!-- fancy lawyer stuff -->
+              <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-3 text-teal-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                  </svg>
+                  Legal Documents
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <a href="#info" class="text-blue-600 hover:underline hover:text-blue-800" onclick="alert('Coming Soon...')">Participant Waiver Form</a>
+                  </li>
+                 
+                  <li class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <a href="#info" class="text-blue-600 hover:underline hover:text-blue-800" onclick="alert('Coming Soon...')">Code of Conduct</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- hcb get money but not from big buisness -->
+              <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-bold mb-3 text-teal-600 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                    <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd" />
+                  </svg>
+                  Support the Mission
+                </h3>
+                <p class="text-gray-700 mb-4">Your contribution helps us provide a top-notch experience for our young agents. Rehacted is fiscally sponsored by Hack Club, so your donations are tax-deductable.</p>
+               <a href="https://hcb.hackclub.com/donations/start/rehacted" class="underline text-blue-700">Donate via HCB.</a></p>
+              </div>
+              
+              
+            </div>
+            
+            <button id="back-button" class="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition-colors duration-200">Back to Mission</button>
           `,
       };
 
@@ -561,7 +798,9 @@
           .bindPopup("Classified Location")
           .openPopup();*/
       }
-
+      document.getElementById("info-link").addEventListener("click", () => {
+        window.location.hash = "info";
+      });
       document.getElementById("sponsors-link").addEventListener("click", () => {
         window.location.hash = "sponsors";
       });
@@ -621,6 +860,10 @@
       document.getElementById("referral-link").addEventListener("click", () => {
         window.location.hash = "referral";
       });
+      document.getElementById("team-link").addEventListener("click", () => {
+        window.location.hash = "team";
+      });
+      
       window.addEventListener("hashchange", handleHashChange);
 
       handleHashChange();
