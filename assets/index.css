@@ -19,7 +19,7 @@ body {
 .sticky-note {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   width: 180px;
   padding: 15px;
   background-color: #ffff8886;/* og color w/o alpha: #FFFF88 */
