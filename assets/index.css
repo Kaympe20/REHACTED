@@ -1,145 +1,46 @@
-@import "tailwindcss";
-
-@font-face {
-  font-family: "Wondertype";
-  src: url(/assets/fonts/WonderType-Regular.otf) format("opentype");
+#content-area {
+  font-family: "Special Elite";
+  line-height: 1.7;
 }
-
-@media screen and (max-width: 800px) {
-  .paper {
-    width: 90vw;
-    height: fit-content;
-  }
-
-  .hard-fork img {
-    width: 10vh;
-  }
-
-  .hard-fork {
-    position: relative;
-    left: 10vw;
-  }
+.spy-font {
+  font-family: "Special Elite";
 }
-
-@media screen and (min-width: 800px) {
-  .paper {
-    width: 60vw;
-    aspect-ratio: 8.5 / 11;
-  }
-
-  .paper:nth-of-type(1) {
-    rotate: -5deg;
-  }
-
-  .paper:nth-of-type(2) {
-    rotate: 3deg;
-  }
-
-  .paper p {
-    font-size: 1vw;
-  }
-
-  .hard-fork img {
-    width: 10vw;
-  }
-
-  h1 {
-    font-size: 6vw;
-  }
-
-  h2 {
-    font-size: 3vw;
-  }
-
-  h3 {
-    font-size: 2vw;
-  }
-
-  .hard-fork {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 2vw;
-  }
+#content-area p {
+  margin-bottom: 1rem;
 }
 
 body {
-  background-image: url("/assets/img/wood.png");
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: Special Elite;
-  overflow-x: hidden;
+  background-image: url(/assets/img/wood.png);
 }
 
-.content {
-  height: 100vh;
+#folder {
+  background-color: #e0ceae;
 }
-
-.paper {
-  position: relative;
-  background-color: white;
-  margin: 50px auto auto;
-  padding: 2% 5%;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2.5vw;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.paper p {
-  text-indent: 20pt;
-  text-align: justify;
-  margin-bottom: 30px;
-}
-
-.watermark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 10vw;
-  opacity: 0.15;
-  white-space: nowrap;
-  width: 100%;
-  pointer-events: none;
-  user-select: none;
-  color: red;
-}
-
-black {
-  background-color: black;
-  white-space: pre;
-  pointer-events: none;
-  user-select: none;
-}
-
-h1,
-h3 {
+.sticky-note {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 180px;
+  padding: 15px;
+  background-color: #ffff8886;/* og color w/o alpha: #FFFF88 */
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+  font-family: "Special Elite", cursive;
+  z-index: 1000;
+  line-height: 1.5;
+  color: #333;
+  font-size: 14px;
   text-align: center;
 }
-
-.sponsors {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
-  gap: 50px;
+.sticky-note:hover {
+  background-color: #FFFF88; /* og color w/o alpha: #FFFF88 */
+  cursor: pointer;
 }
-
-.sponsors a {
-  border: 2px solid black;
-  height: 200px;
-  width: fit-content;
+.sticky-note .important {
+  font-weight: bold;
+  color: #D00000;
+  font-size: 16px;
 }
-
-.sponsors img {
-  height: 100%;
-}
-
-p a {
-  color: blue;
-  text-decoration: underline;
+* {
+  word-break: break-word;
 }
