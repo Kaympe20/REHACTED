@@ -1,9 +1,12 @@
+@import "tailwindcss";
+@import "@fontsource/special-elite/index.css";
+
 #content-area {
-  font-family: "Special Elite";
+  font-family: "Special Elite", cursive;
   line-height: 1.7;
 }
 .spy-font {
-  font-family: "Special Elite";
+  font-family: "Special Elite", cursive;
 }
 #content-area p {
   margin-bottom: 1rem;

@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig({
