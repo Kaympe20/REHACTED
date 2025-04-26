@@ -47,3 +47,7 @@ body {
 * {
   word-break: break-word;
 }
+
+a {
+  cursor: pointer;
+}
