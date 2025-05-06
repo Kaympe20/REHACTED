@@ -1,6 +1,7 @@
 import '@fontsource/special-elite';
 import 'leaflet/dist/leaflet.css';
 import * as L from 'leaflet';
+
 window.L = L;
 const stickynotetext = document.getElementById('sticky-note-time');
 const countDownDate = new Date("May 24, 2025 12:00:00").getTime();
@@ -31,7 +32,7 @@ async function loadSchedule() {
             "https://serenidad.click/hacktime/getSchedule/41ccd101-5751-4d3f-886a-21035af2f81b"
         );
         const data = await response.json();
-        const scheduleContent = `
+        document.getElementById("content-area").innerHTML = `
             <h2 class="text-2xl font-bold text-green-500 uppercase mb-4">MISSION SCHEDULE</h2>
             <div class="border-l-2 border-green-500 pl-4">
               ${data.schedule
@@ -64,7 +65,6 @@ async function loadSchedule() {
             </div>
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
           `;
-        document.getElementById("content-area").innerHTML = scheduleContent;
         addBackButtonListener();
     } catch (error) {
         console.error("Error fetching schedule:", error);
@@ -191,7 +191,7 @@ const contents = {
           <div class="border rounded-lg p-4 bg-green-50 hover:bg-green-100 transition-colors duration-200" style="background-color: #3ec14a10;">
             <h2 class="text-xl font-bold text-green-500 mb-2">Inquire About Sponsorship Anonymously</h2>
             <div style="display: flex; gap: 20px; align-items: center; margin: 15px">
-              <img src="https://play-lh.googleusercontent.com/VDNa2MlVC3S5_8czrBSE01ilvmHTMS8NFJie6T9K4USUmnj5ETrf4pngGBPo8dZ3qYw" style="width: 200px;">
+              <img src="https://play-lh.googleusercontent.com/VDNa2MlVC3S5_8czrBSE01ilvmHTMS8NFJie6T9K4USUmnj5ETrf4pngGBPo8dZ3qYw" style="width: 200px" alt="Session">
               <div>
                 <p class="text-gray-700 mb-2 text-sm">If you want to get in touch about sponsorship without using any personally identifiable information, feel free to contact us at our session address.</p>
                 <div class="bg-gray-100 p-2 rounded mb-3 overflow-x-auto">
@@ -233,7 +233,7 @@ const contents = {
           <p>If your design is one of the 10 selected entries, you’ll receive 50 of your stickers, and each event attendee will also receive one of your stickers. It’s a great way to showcase your work and get your design out there!</p>
           <p>Every valid submission will receive secret information about the mission, 5 of their sticker at the event, and an exclusive sticker.</p>
           <p><a href="https://forms.fillout.com/t/ev3grkgG7Eus" class="underline text-blue-700">Use this form to upload your sticker to mission control.</a></p>
-          <iframe class="airtable-embed" src="https://airtable.com/embed/appHf2vkkWvY4scnh/shriF2PfvMKdTD4p4?viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          <iframe class="airtable-embed" src="https://airtable.com/embed/appHf2vkkWvY4scnh/shriF2PfvMKdTD4p4?viewControls=on" frameborder="0" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
           <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
         `,
     referral: `
