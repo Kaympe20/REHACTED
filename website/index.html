@@ -362,28 +362,25 @@
                 .map(
                   (item) => `
                     <div class="mb-4">
-                      <h3 class="font-bold">${new Date(
-                        item.time.start
-                      ).toLocaleString("en-US", {
-                        timeZone: "Etc/Utc",
-                        weekday: "long",
-                        month: "long",
-                        day: "numeric",
-                      })}</h3>
-                      <p class="text-sm">${new Date(
-                        item.time.start
-                      ).toLocaleTimeString("en-US", {
-                        timeZone: "Etc/Utc",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                      })} - ${new Date(item.time.end).toLocaleTimeString(
-                    "en-US",
-                    {
-                      timeZone: "Etc/Utc",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    }
-                  )}: ${item.title || "TBD"}</p>
+                      <h3 class="font-bold">
+                        ${item.title || "TBD"}
+                      </h3>
+                      <p class="text-sm">
+                        ${new Date(item.time.start).toLocaleTimeString("en-US", {
+                          timeZone: "ETC/UTC",
+                          hour: "2-digit",
+                          minute: "2-digit",
+                        })} -
+                        ${new Date(item.time.end).toLocaleTimeString("en-US", {
+                          timeZone: "ETC/UTC",
+                          hour: "2-digit",
+                          minute: "2-digit",
+                        })}:
+                        ${new Date(item.time.start).toLocaleString("en-US", {
+                          timeZone: "ETC/UTC",
+                          weekday: "long",
+                        })}
+                      </p>
                     </div>
                   `
                 )
