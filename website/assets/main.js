@@ -70,6 +70,7 @@ async function loadSchedule() {
         console.error("Error fetching schedule:", error);
         document.getElementById("content-area").innerHTML = `
             <p class="text-red-500">Failed to load the schedule. Please try again later.</p>
+            <p class="text-black">If you continue getting this error, click <a href="https://serenidad.click/hacktime/getSchedule/41ccd101-5751-4d3f-886a-21035af2f81b" class="text-blue-500 decoration-wavy underline" target="_blank">here</a>, allow the link, then reload the page. Don't worry, it's totally safe!</p>
             <button id="back-button" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Back to Mission</button>
           `;
         addBackButtonListener();
