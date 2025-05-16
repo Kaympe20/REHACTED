@@ -542,4 +542,4 @@ document.getElementById("team-link").addEventListener("click", () => {
 window.addEventListener("hashchange", handleHashChange);
 handleHashChange();
 location.hash == "#schedule" ? loadSchedule() : void true;
-location.hash == "#referral" ? referralLogic() : void true;    window.location.hash = "team";});window.addEventListener("hashchange", handleHashChange);handleHashChange();location.hash == "#schedule" ? loadSchedule() : void true;location.hash == "#referral" ? referralLogic() : void true;
+location.hash == "#referral" ? referralLogic() : void true;
