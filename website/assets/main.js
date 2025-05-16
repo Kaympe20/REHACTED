@@ -146,13 +146,6 @@ const contents = {
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               <div class="p-4 rounded border border-gray-200">
                 <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
-                  <img src="https://wsrv.nl/?url=extra.3kh0.net/img/art/xmr_hoodie.png&w=371&h=371" alt="3kh0" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
-                  <h3 class="font-bold break-words"><a href="https://3kh0.net/?utm_source=rehacted" class="underline">3kh0</a></h3>
-                </div>
-                <p class="text-sm">16 year old gay software developer, furry, cybersecurity enthusiast, and privacy activist</p>
-              </div>
-              <div class="p-4 rounded border border-gray-200">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center mb-2">
                   <img src="https://scrapyard.shayaand.hackclub.app/static/lucid.jpg" alt="𝕝𝕦𝕔𝕚𝕕" class="w-16 h-16 object-cover rounded mr-2 mb-2 sm:mb-0">
                   <h3 class="font-bold break-words"><a href="https://jjjhhhppp.vip/?utm_source=rehacted" class="underline">𝕝𝕦𝕔𝕚𝕕</a></h3>
                 </div>
@@ -341,16 +334,6 @@ const contents = {
                     <p class="text-xs text-gray-600">General Assistance</p>
                   </div>
                 </div>
-              </div>
-              <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-center mb-2">
-                  <img src="/echo.gif" alt="Agent Echo" class="h-12 w-12 rounded-full object-cover mr-3">
-                  <div>
-                    <h4 class="font-bold">Echo</h4>
-                    <p class="text-xs text-gray-600">General Assistance</p>
-                  </div>
-                </div>
-                <p class="text-sm text-gray-700">16 year old software developer, furry, cybersecurity enthusiast, and privacy activist</p>
               </div>
               <div class="bg-gray-100 p-4 rounded shadow-sm hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-center mb-2">
@@ -559,4 +542,4 @@ document.getElementById("team-link").addEventListener("click", () => {
 window.addEventListener("hashchange", handleHashChange);
 handleHashChange();
 location.hash == "#schedule" ? loadSchedule() : void true;
-location.hash == "#referral" ? referralLogic() : void true;
+location.hash == "#referral" ? referralLogic() : void true;    window.location.hash = "team";});window.addEventListener("hashchange", handleHashChange);handleHashChange();location.hash == "#schedule" ? loadSchedule() : void true;location.hash == "#referral" ? referralLogic() : void true;
