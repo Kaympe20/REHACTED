@@ -407,13 +407,13 @@ const contents = {
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <a href="#info" class="text-blue-600 hover:underline hover:text-blue-800" onclick="alert('Coming Soon...')">Participant Waiver Form</a>
+                  <a href="https://hack.fillout.com/rehacted-waiver" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank">Participant Waiver Form</a>
                 </li>
                 <li class="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <a href="https://hackclub.com/conduct/" class="text-blue-600 hover:underline hover:text-blue-800">Code of Conduct</a>
+                  <a href="https://hackclub.com/conduct/" class="text-blue-600 hover:underline hover:text-blue-800" target="_blank">Code of Conduct</a>
                 </li>
               </ul>
             </div>
